@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Отправка письма с вложением</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="./src/css/style.css" rel="stylesheet">
+  
+</head>
+
+<body>
+  <form enctype="multipart/form-data" action="./src/send.php" method="post" id="form" onsubmit="send(event, 'send.php')">
+    <p>Имя</p>
+    <input placeholder="Представьтесь" name="name" type="text" >
+    <p>Email</p>
+    <input placeholder="Укажите почту" name="email" type="text" >
+    <p>Сообщение</p>
+    <textarea name="text"></textarea>
+    <p>Прикрепить файлы</p>
+    <input type="file" name="myfile[]" multiple id="myfile">
+    <p><input value="Отправить" type="submit"></p>
+ </form>
+  
+	<script src="./src/js/script.js"></script>
+  
+
+</html>
