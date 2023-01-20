@@ -33,14 +33,14 @@ try {
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
-    $mail->Username   = 'vasiliy_pit@mail.ru'; // Логин на почте
-    $mail->Password   = '*y796aa98rus#'; // Пароль на почте
+    $mail->Username   = ''; // Логин на почте
+    $mail->Password   = '*'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('vasiliy_pit@mail.ru', 'Имя отправителя'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('', 'Имя отправителя'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('satorysan@mail.ru');  
+    $mail->addAddress('youremail@gmail.com');  
     $mail->addAddress('youremail@gmail.com'); // Ещё один, если нужен
 
     // Прикрипление файлов к письму
